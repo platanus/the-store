@@ -6,4 +6,4 @@
 
 
 -----------
-#### Info Adicional (pantallazos, links, fuentes, etc.)
+
