@@ -9,19 +9,22 @@ const variants = {
 
 interface Props {
   variant?: keyof typeof variants
+  disabled?: boolean
 }
 withDefaults(
   defineProps<Props>(),
   {
     variant: 'primary',
+    disabled: false,
   },
 );
 </script>
 
 <template>
   <button
-    class="rounded px-3 py-2 text-sm font-semibold"
+    class="rounded-full px-4 py-2 text-sm font-semibold"
     :class="variants[variant]"
+    :disabled="disabled"
   >
     <slot />
   </button>
