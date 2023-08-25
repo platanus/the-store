@@ -3,7 +3,6 @@ import { computed, ref } from 'vue';
 import { useNotification } from '@kyvg/vue3-notification';
 import type { Item } from '../api/items';
 import purchasesApi from '../api/purchases';
-import InlineSvg from 'vue-inline-svg';
 
 type Props = {
   item: Item
