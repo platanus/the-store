@@ -8,6 +8,8 @@ import BaseCheckbox from './components/base-checkbox.vue';
 import UserSession from './components/user-session.vue';
 import ItemList from './components/item-list.vue';
 import PurchaseList from './components/purchase-list.vue';
+import ItemDetails from './components/item-details.vue';
+import InlineSvg from 'vue-inline-svg';
 import './css/application.css';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -18,11 +20,13 @@ document.addEventListener('DOMContentLoaded', () => {
       ItemList,
       PurchaseList,
       BaseNotifications,
+      ItemDetails,
     },
   });
   app.component('BaseInput', BaseInput);
   app.component('BaseButton', BaseButton);
   app.component('BaseCheckbox', BaseCheckbox);
+  app.component('InlineSvg', InlineSvg);
   app.use(Notifications);
   app.mount('#vue-app');
 
